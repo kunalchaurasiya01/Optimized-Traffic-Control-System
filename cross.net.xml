@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_schema.xsd">
+    <node id="n1" x="0.0" y="0.0" type="traffic_light"/>
+    <node id="n2" x="500.0" y="0.0" type="traffic_light"/>
+    <node id="n3" x="0.0" y="500.0" type="traffic_light"/>
+    <node id="n4" x="500.0" y="500.0" type="traffic_light"/>
+    
+    <edge id="e1" from="n1" to="n2" priority="2" numLanes="1" speed="13.9"/>
+    <edge id="e2" from="n2" to="n4" priority="2" numLanes="1" speed="13.9"/>
+    <edge id="e3" from="n4" to="n3" priority="2" numLanes="1" speed="13.9"/>
+    <edge id="e4" from="n3" to="n1" priority="2" numLanes="1" speed="13.9"/>
+    
+    <junction id="j1" x="0.0" y="0.0" type="traffic_light" incLanes="e1 e3" outLanes="e2 e4"/>
+    <junction id="j2" x="500.0" y="0.0" type="traffic_light" incLanes="e2" outLanes="e1"/>
+    <junction id="j3" x="0.0" y="500.0" type="traffic_light" incLanes="e3" outLanes="e4"/>
+    <junction id="j4" x="500.0" y="500.0" type="traffic_light" incLanes="e4 e2" outLanes="e3 e1"/>
+</net>

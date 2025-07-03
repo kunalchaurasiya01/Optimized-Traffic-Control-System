@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<configuration xmlns="http://www.eclipse.org/2011/XCore">
+    <input>
+        <net-file value="cross.net.xml"/>
+        <route-files value="cross.rou.xml"/>
+        <additional-files value="cross.add.xml"/>
+    </input>
+    <simulation>
+        <time-to-teleport value="10"/>
+        <begin>0</begin>
+        <end>3600</end>
+    </simulation>
+</configuration>

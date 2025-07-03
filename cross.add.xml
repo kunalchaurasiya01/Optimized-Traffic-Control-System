@@ -1,0 +1,6 @@
+<additional>
+    <trafficlight id="tl1" type="static" programID="1">
+        <phase duration="30" state="GGgG"/>
+        <!-- Other phases -->
+    </trafficlight>
+</additional>
